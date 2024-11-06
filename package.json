@@ -1,0 +1,40 @@
+{
+  "name": "craftflow",
+  "version": "1.0.5",
+  "description": "A CLI tool to generate API files and folder structure",
+  "main": "bin/index.js",
+  "bin": {
+    "craftflow": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "npm run init && nodemon ./src/app.ts",
+    "start": "node build/app.js",
+    "init": "ts-node ./src/configs/init.ts",
+    "build": "npx tsc"
+  },
+  "keywords": [
+    "cli",
+    "api",
+    "generator",
+    "craftflow",
+    "mufazmi",
+    "UmairFarooqui"
+  ],
+  "author": "Umair Farooqui",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mufazmi/craftflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mufazmi/craftflow/issues"
+  },
+  "homepage": "https://github.com/mufazmi/craftflow#readme",
+  "dependencies": {
+    "case": "^1.6.3"
+  }
+}
